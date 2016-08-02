@@ -20,8 +20,8 @@ h3{
 strong{
   background:#666666;
   padding:6px 8px 3px 8px;
-  margin-left:130px;  
-  margin-top:20px;  
+  margin-left:130px;
+  margin-top:20px;
   text-shadow:#333333 0.5px 1px 0;
 }
 
@@ -33,7 +33,7 @@ h1, h2{
   color:#F2EEAC;
   font-family: Georgia, Times New Roman, Times, serif;
   text-shadow:#666666 0.5px 1px 0;
-  letter-spacing:1px;  
+  letter-spacing:1px;
 }
 
 #main_content{
@@ -58,7 +58,7 @@ h1, h2{
 
 #main_content p{
   font-family: Stone, Helvetica, Arial, sans-serif;
-  line-height:22px;  
+  line-height:22px;
   color:#ffffff;
   padding-bottom:15px;
   font-size:12pt;
@@ -85,12 +85,12 @@ h1, h2{
 
 .panel p{
   font-family: Stone, Helvetica, Arial, sans-serif;
-  line-height:22px;  
+  line-height:22px;
   color:#ffffff;
   padding-bottom:5px;
-  font-size:11pt;  
+  font-size:11pt;
 }
-    
+
 
 .panel li{
   font-family: Stone, Helvetica, Arial, sans-serif;
@@ -98,8 +98,12 @@ h1, h2{
   margin:7px 0 0 2px;
 }
 
+.panel li.see-more-link {
+  cursor: pointer;
+}
+
 .date{
-  width:30px!important;  
+  width:30px!important;
   padding:4px 7px 1px 7px;
   margin-right:7px;
   color:#ffffff;
@@ -115,7 +119,7 @@ h1, h2{
 .footer{
   width:750px;
   margin:0 0 0 313px;
-  background-color:#333333;  
+  background-color:#333333;
   font-family: Stone, Helvetica, Arial, sans-serif;
   padding:0 20px 10px 30px;
 }
