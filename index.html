@@ -137,12 +137,12 @@ ope<!DOCTYPE html>
     for (var j = 0; j < items.length; j++) {
       if(Object.prototype.toString.call(items[j]) == '[object HTMLLIElement]') {
         count++;
-        if (count > 3) {
+        if (count > 5) {
           items[j].style.display = 'none';
         }
       }
     }
-    if (count > 3) {
+    if (count > 5) {
       var li = document.createElement('li');
       li.className = 'see-more-link';
       li.appendChild(document.createTextNode('See more...'));
