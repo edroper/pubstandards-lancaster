@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ope<!DOCTYPE html>
 <html>
 <head>
    <title>Pub Standards - Lancaster</title>
@@ -58,7 +58,7 @@
       <div class="panel">
         <h2>When?</h2>
         <p>The second Thursday of every month, 6:00pm onwards.</p>
-        <ul>
+        <ul class="collapsable-date-list">
           <li><span class="date"># 41</span>11th August 2016</li>
           <li class="past"><span class="date"># 40</span>14th July 2016</li>
           <li class="past"><span class="date"># 39</span>9th June 2016</li>
@@ -109,23 +109,15 @@
           If anyone wants to organize a Substandards, contact
           <a href="http://twitter.com/PubStandardsLnc">@PubStandardsLnc</a>.
         </p>
-        <ul>
-          <li class="past"><span class="date"> "Lowered" </span>26th May 2016</li>
-          <li class="past">Pubforge</li>
-          <li class="past"><span class="date"> "Farewell" </span>22nd January 2015</li>
-          <li class="past">Federal Taphouse</li>
-          <li class="past"><span class="date"> "Cocktail" </span>25th September 2014</li>
-          <li class="past">Fulton St</li>
-          <li class="past"><span class="date"> "Tap" </span>26nd June 2014</li>
-          <li class="past">Spring House Taproom</li>
-          <li class="past"><span class="date"> "Scrub" </span>22nd May 2014</li>
-          <li class="past">Quips Pub</li>
-          <li class="past"><span class="date"> "Squishy" </span>24th April 2014</li>
-          <li class="past">Federal Taphouse</li>
-          <li class="past"><span class="date"> "Tim" </span>27th March 2014</li>
-          <li class="past">Chancey's Pub</li>
-          <li class="past"><span class="date"> "Kumiko" </span>27th February 2014</li>
-          <li class="past">Lancaster Brewing Company</li>
+        <ul class="collapsable-date-list">
+          <li class="past"><span class="date"> "Lowered" </span>26th May 2016<br>Pubforge</li>
+          <li class="past"><span class="date"> "Farewell" </span>22nd January 2015<br>Federal Taphouse</li>
+          <li class="past"><span class="date"> "Cocktail" </span>25th September 2014<br>Fulton St</li>
+          <li class="past"><span class="date"> "Tap" </span>26nd June 2014<br>Spring House Taproom</li>
+          <li class="past"><span class="date"> "Scrub" </span>22nd May 2014<br>Quips Pub</li>
+          <li class="past"><span class="date"> "Squishy" </span>24th April 2014<br>Federal Taphouse</li>
+          <li class="past"><span class="date"> "Tim" </span>27th March 2014<br>Chancey's Pub</li>
+          <li class="past"><span class="date"> "Kumiko" </span>27th February 2014<br>Lancaster Brewing Company</li>
         </ul>
       </div>
     </div>
@@ -137,5 +129,35 @@
   </div>
 </div>
 
+<script>
+  var collapsable_lists = document.getElementsByClassName('collapsable-date-list');
+  for (var i = 0; i < collapsable_lists.length; i++) {
+    var items = collapsable_lists[i].childNodes;
+    var count = 0;
+    for (var j = 0; j < items.length; j++) {
+      if(Object.prototype.toString.call(items[j]) == '[object HTMLLIElement]') {
+        count++;
+        if (count > 3) {
+          items[j].style.display = 'none';
+        }
+      }
+    }
+    if (count > 3) {
+      var li = document.createElement('li');
+      li.className = 'see-more-link';
+      li.appendChild(document.createTextNode('See more...'));
+      li.onclick = function() {
+        var items = this.parentNode.childNodes;
+        for (var i = 0; i < items.length; i++) {
+          if(Object.prototype.toString.call(items[i]) == '[object HTMLLIElement]') {
+            items[i].style.display = 'list-item';
+          }
+        }
+        this.style.display = 'none';
+      };
+      collapsable_lists[i].appendChild(li);
+    }
+  }
+</script>
 </body>
 </html>
