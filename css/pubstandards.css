@@ -1,3 +1,8 @@
+/*Fix pStrong spacing/size.  Put in div instead of p tags?
+Make all white text partially opaque.  
+Media Queries.*/
+
+
 @font-face {
   font-family: Stone;
   src: url('../fonts/stonsans.ttf');
@@ -17,14 +22,6 @@ h2{
 }
 h3{
   font-size:13pt;
-}
-
-strong{
-  background:#666666;
-  padding:6px 8px 3px 8px;
-  margin-left:130px;
-  margin-top:20px;
-  text-shadow:#333333 0.5px 1px 0;
 }
 
 a{
@@ -72,28 +69,44 @@ h1, h2{
   font-size:12pt;
 }
 
+#pStrong {
+  color: white;
+  background:#666666;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  padding: 0;
+  margin: 0 auto;
+  text-shadow:#333333 0.5px 1px 0;
+}
+
+#pStrong strong {
+  line-height: 36px;
+  text-align: center;
+}
+
 iframe {
-  width: 750px;
+  width: 100%;
   height: 350px; 
 }
 
 #panels{
   grid-column: 1/2;
-  width:320px;
-  height:600px;
+  width:100%;
 }
 
 .panel{
-  width:200px;
-  height:300px;
+  max-width: 329px;
+  margin: auto;
 }
 .panel img {
-  width: 329px;
+  max-width: 329px;
+  padding-top: 20px;
 }
 .panel h2{
   color:#F2EEAC;
   font-family: Georgia, Times New Roman, Times, serif;
-  margin:20px 0 5px 0;
+  margin:20px 0 0 0;
 }
 
 .panel p{
@@ -104,7 +117,10 @@ iframe {
   font-size:11pt;
 }
 
-
+.panel ul {
+  list-style: none;
+  padding: 0;
+}
 .panel li{
   font-family: Stone, Helvetica, Arial, sans-serif;
   color:#ffffff;
@@ -130,16 +146,27 @@ iframe {
 }
 
 .footer{
-  width:750px;
-  margin:0 0 0 313px;
-  background-color:#333333;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
   font-family: Stone, Helvetica, Arial, sans-serif;
-  padding:0 20px 10px 30px;
+  padding:0 0 10px 0;
+}
+
+.footer div {
+  grid-column: 2/4;
+  background-color:#333333;
+  width: 100%;
 }
 
 .footer p{
-  color:#ffffff;
+  color:hsl(0, 0%, 100%, 0.85);
+  padding: 0 20px;
 }
+
+
+
+
+
 
 @media (max-width: 500px){
   
