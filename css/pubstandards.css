@@ -1,6 +1,6 @@
-/*Fix pStrong spacing/size.  Put in div instead of p tags?
-Make all white text partially opaque.  
-Media Queries.*/
+/*Media Queries.
+Run images through Johann Schmedtmanns minifier
+*/
 
 
 @font-face {
@@ -26,6 +26,7 @@ h3{
 
 a{
   color:#F2EEAC;
+  opacity: 0.9;
 }
 
 h1, h2{
@@ -33,6 +34,12 @@ h1, h2{
   font-family: Georgia, Times New Roman, Times, serif;
   text-shadow:#666666 0.5px 1px 0;
   letter-spacing:1px;
+  opacity: 0.8;
+}
+
+p,
+li {
+  opacity: 0.8;
 }
 
 #main_wrapper {
@@ -73,15 +80,14 @@ h1, h2{
   color: white;
   background:#666666;
   display: flex;
-  flex-direction: row;
-  width: 70%;
-  padding: 0;
+  flex-flow: column;
+  max-width:65%;
+  padding: 8px;
   margin: 0 auto;
-  text-shadow:#333333 0.5px 1px 0;
-}
-
-#pStrong strong {
-  line-height: 36px;
+  font-family: Stone, Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  text-shadow: #333333 0.5px 1px 0;
+  opacity: 0.9;
   text-align: center;
 }
 
