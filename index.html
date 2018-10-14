@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Pub Standards - Lancaster</title>
    <link rel="stylesheet" href="css/pubstandards.css" type="text/css">
 </head>
@@ -82,7 +85,7 @@
                 <li class="past"><span class="date"># 1</span>11th April 2013</li>
                 <li class="past"><span class="date"># 0</span>14th March 2013</li>
               </ul>
-      
+
               <h2>When is Substandards?</h2>
               <p>Periodically, the fourth Thursday of the month, 6:00pm onwards.</p>
               <p>
@@ -117,7 +120,7 @@
             the parking garage.
           </p>-->
 
-          <h2>What is it?</h2>
+          <h1>What is it?</h1>
           <p>Pub Standards Lancaster is a monthly meetup of developers, designers, founders and people-who-like-to-build-stuff in central Pennsylvania.
             It has been running in Lancaster since 2013, as well as in <a href="http://www.pubstandards.co.uk/" title="PubStandards London">London</a> and <a href="http://pubstandards.com/">other cities</a> since 2005.</p>
           <p>Pub Standards is organized by <a href="http://twitter.com/courtewing" title="Court Ewing on Twitter">Court Ewing</a>.</p>
@@ -130,7 +133,7 @@
           <h2>Where?</h2>
           
           <p><a href="http://www.tellus360.com/">Tellus360</a> on the first block of East King. We'll be on the second floor (the lounge).</p>
-          <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/d/u/0/embed?mid=z27oEFr0gOXM.k7ToRqA38qM4&amp;z=15"></iframe>
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=z27oEFr0gOXM.k7ToRqA38qM4&amp;z=15"></iframe>
 
           <!--
           <p><a href="https://pubforge.work/">Pubforge</a> on the first block of East King. Second floor of Tellus360</p>
@@ -148,7 +151,7 @@
           </p>
         </main>
       </div>
-  
+
 
   <footer class="footer">
     <div>
@@ -160,34 +163,34 @@
 
 
 <script>
-  var collapsable_lists = document.getElementsByClassName('collapsable-date-list');
-  for (var i = 0; i < collapsable_lists.length; i++) {
-    var items = collapsable_lists[i].childNodes;
-    var count = 0;
-    for (var j = 0; j < items.length; j++) {
-      if(Object.prototype.toString.call(items[j]) == '[object HTMLLIElement]') {
-        count++;
-        if (count > 5) {
-          items[j].style.display = 'none';
-        }
-      }
-    }
-    if (count > 5) {
-      var li = document.createElement('li');
-      li.className = 'see-more-link';
-      li.appendChild(document.createTextNode('See more...'));
-      li.onclick = function() {
-        var items = this.parentNode.childNodes;
-        for (var i = 0; i < items.length; i++) {
-          if(Object.prototype.toString.call(items[i]) == '[object HTMLLIElement]') {
-            items[i].style.display = 'list-item';
+    var collapsable_lists = document.getElementsByClassName('collapsable-date-list');
+    for (var i = 0; i < collapsable_lists.length; i++) {
+      var items = collapsable_lists[i].childNodes;
+      var count = 0;
+      for (var j = 0; j < items.length; j++) {
+        if (Object.prototype.toString.call(items[j]) == '[object HTMLLIElement]') {
+          count++;
+          if (count > 5) {
+            items[j].style.display = 'none';
           }
         }
-        this.style.display = 'none';
-      };
-      collapsable_lists[i].appendChild(li);
+      }
+      if (count > 5) {
+        var li = document.createElement('li');
+        li.className = 'see-more-link';
+        li.appendChild(document.createTextNode('See more...'));
+        li.onclick = function () {
+          var items = this.parentNode.childNodes;
+          for (var i = 0; i < items.length; i++) {
+            if (Object.prototype.toString.call(items[i]) == '[object HTMLLIElement]') {
+              items[i].style.display = 'list-item';
+            }
+          }
+          this.style.display = 'none';
+        };
+        collapsable_lists[i].appendChild(li);
+      }
     }
-  }
 </script>
 </body>
 </html>
