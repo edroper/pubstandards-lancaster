@@ -129,6 +129,7 @@ iframe {
   font-family: Stone, Helvetica, Arial, sans-serif;
   color:#ffffff;
   margin:7px 0 0 2px;
+  padding: 2px 0;
 }
 
 .panel li.see-more-link {
@@ -176,6 +177,10 @@ iframe {
 
   .panel img {
     max-width: 100%;
+  }
+  .panel li{
+    margin:7px 0 0 2px;
+    padding: 5px 0;
   }
 }
 
