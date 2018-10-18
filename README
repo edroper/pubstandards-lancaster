@@ -22,12 +22,12 @@ What I did:
     the white/yellow text on dark background.
 [] Checked that the photo resolution couldn't be lowered without significantly reducing
 quality using https://      .com 
-[] Added media queries
+    [x] Added media queries
     [x] First Breakpoint: ~1400 px Sidepanel looks a little snug.  ~1225px sidepanel img starts to touch center.
         -Looks good down to ~1050px.  Add spacing between each Substandards li element.
-[] Second Breakpoint: ~800px, the word Substandards overlaps with main-content.  
+    [x] Second Breakpoint: 775px, the word Substandards overlaps with main-content.  
 
-[] Including Mobile-friendly layout.
+    [x] Including Mobile-friendly layout.
 [] Need to tidy and organize CSS file.
 [] Test in Firefox
 [] Test in Explorer.
