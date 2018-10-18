@@ -7,7 +7,8 @@ Visit http://pubstandards.us for more details.
 I didn't have any ideas for improvement with this.  But when I looked at the page I realized
 it wasn't responsive.  I thought I could implement this pretty easily without significantly
 changing the style of the page.  Removing the https://yuilibrary.com/yui/docs/cssgrids/ 
-dependancy might lighten the page.
+dependancy might lighten the page.  Also, Yahoo has not supported the yui library since
+2014 https://yahooeng.tumblr.com/post/96098168666/important-announcement-regarding-yui.
 
 What I did:
 
