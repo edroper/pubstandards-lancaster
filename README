@@ -20,17 +20,21 @@ What I did:
     [x] Tried to pretty closely recreate the original style with Vanilla CSS.
     [x] Added a little opacity to all the text on the screen to reduce the brightness of
     the white/yellow text on dark background.
-[] Checked that the photo resolution couldn't be lowered without significantly reducing
-quality using https://      .com 
+    [x] Checked that the photo resolution couldn't be lowered without significantly reducing
+    quality using https://optimizilla.com 
     [x] Added media queries
     [x] First Breakpoint: ~1400 px Sidepanel looks a little snug.  ~1225px sidepanel img starts to touch center.
         -Looks good down to ~1050px.  Add spacing between each Substandards li element.
     [x] Second Breakpoint: 775px, the word Substandards overlaps with main-content.  
 
     [x] Including Mobile-friendly layout.
-[] Need to tidy and organize CSS file.
-[] Test in Firefox
-[] Test in Explorer.
+    [x] Need to tidy and 
+[]organize CSS file.
+    [x] Test in Firefox
+[] Test in Edge.
+    [] Issue: footer text appears black or dk grey instead of partially opaque white
+    [] Footer sizing + margin  are off at 775px.  May be general issue not Edge
+
 -HTML Validation:
     [x] Trimmed trailing white space
     [x] Added appropriate meta tags to head
@@ -41,4 +45,11 @@ quality using https://      .com
 [] Add Tab-indexes?  (With sidebar structure first this could be helpful.  )
 [] Review WCAG standards and apply in this case?
 [] Turn WCAG standards (as you read it) into a checklist to skim through with all pages.
+
+////Speed Test
+//////Before:
+Condition: Local in Chrome.  Total time 316.4 ms.
+
+//////After:
+Condition: Local in Chrome.  Total time 277.8 ms.
 */

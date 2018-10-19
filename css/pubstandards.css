@@ -1,34 +1,35 @@
 @font-face {
   font-family: Stone;
-  src: url('../fonts/stonsans.ttf');
+  src: url("../fonts/stonsans.ttf");
 }
 
-html{
-  background: transparent url('../images/woodenbg2.jpg');
+html {
+  background: transparent url("../images/woodenbg2-min.jpg");
   margin: 0;
   padding: 0;
 }
 
-h1{
-  font-size:26pt;
+h1 {
+  font-size: 26pt;
 }
-h2{
-  font-size:16pt;
+h2 {
+  font-size: 16pt;
 }
-h3{
-  font-size:13pt;
+h3 {
+  font-size: 13pt;
 }
 
-a{
-  color:#F2EEAC;
+a {
+  color: #f2eeac;
   opacity: 0.9;
 }
 
-h1, h2{
-  color:#F2EEAC;
+h1,
+h2 {
+  color: #f2eeac;
   font-family: Georgia, Times New Roman, Times, serif;
-  text-shadow:#666666 0.5px 1px 0;
-  letter-spacing:1px;
+  text-shadow: #666666 0.5px 1px 0;
+  letter-spacing: 1px;
   opacity: 0.8;
 }
 
@@ -42,42 +43,42 @@ li {
   grid-template-columns: 25% 25% 25% 25%;
 }
 
-#main_content{
+#main_content {
   grid-column: 2/4;
   width: 100%;
-  background-color:#333333;
-  padding:10px 0 10px 0;
+  background-color: #333333;
+  padding: 10px 0 10px 0;
 }
 
 #main_content h1,
-#main_content h2{
-  color:#F2EEAC;
+#main_content h2 {
+  color: #f2eeac;
   font-family: Georgia, Times New Roman, Times, serif;
-  margin:20px 0 5px 0;
+  margin: 20px 0 5px 0;
   padding: 0 20px;
 }
 
-#main_content h3{
-  color:#F2EEAC;
+#main_content h3 {
+  color: #f2eeac;
   font-family: Georgia, Times New Roman, Times, serif;
-  margin:0 auto 5px auto;
+  margin: 0 auto 5px auto;
   padding: 0 20px;
 }
 
-#main_content p{
+#main_content p {
   font-family: Stone, Helvetica, Arial, sans-serif;
-  line-height:22px;
-  color:#ffffff;
+  line-height: 22px;
+  color: #ffffff;
   padding: 0 20px 15px 20px;
-  font-size:12pt;
+  font-size: 12pt;
 }
 
 #pStrong {
   color: white;
-  background:#666666;
+  background: #666666;
   display: flex;
   flex-flow: column;
-  max-width:65%;
+  max-width: 65%;
   padding: 8px;
   margin: 0 auto;
   font-family: Stone, Helvetica, Arial, sans-serif;
@@ -93,12 +94,12 @@ iframe {
   height: 350px;
 }
 
-#panels{
+#panels {
   grid-column: 1/2;
-  width:100%;
+  width: 100%;
 }
 
-.panel{
+.panel {
   max-width: 329px;
   margin: auto;
 }
@@ -107,28 +108,28 @@ iframe {
   padding-top: 20px;
   margin: auto;
 }
-.panel h2{
-  color:#F2EEAC;
+.panel h2 {
+  color: #f2eeac;
   font-family: Georgia, Times New Roman, Times, serif;
-  margin:20px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
-.panel p{
+.panel p {
   font-family: Stone, Helvetica, Arial, sans-serif;
-  line-height:22px;
-  color:#ffffff;
-  padding-bottom:5px;
-  font-size:11pt;
+  line-height: 22px;
+  color: #ffffff;
+  padding-bottom: 5px;
+  font-size: 11pt;
 }
 
 .panel ul {
   list-style: none;
   padding: 0;
 }
-.panel li{
+.panel li {
   font-family: Stone, Helvetica, Arial, sans-serif;
-  color:#ffffff;
-  margin:7px 0 0 2px;
+  color: #ffffff;
+  margin: 7px 0 0 2px;
   padding: 2px 0;
 }
 
@@ -136,42 +137,41 @@ iframe {
   cursor: pointer;
 }
 
-.date{
-  width:30px;
-  padding:4px 7px 1px 7px;
-  margin-right:7px;
-  color:#ffffff;
-  background:#333333;
+.date {
+  width: 30px;
+  padding: 4px 7px 1px 7px;
+  margin-right: 7px;
+  color: #ffffff;
+  background: #333333;
   border-radius: 4px;
   -moz-border-radius: 4px;
 }
 
-.past{
-  text-decoration:line-through;
+.past {
+  text-decoration: line-through;
 }
 
-.footer{
+.footer {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   font-family: Stone, Helvetica, Arial, sans-serif;
-  padding:0 0 10px 0;
+  padding: 0 0 10px 0;
 }
 
 .footer div {
   grid-column: 2/4;
-  background-color:#333333;
+  background-color: #333333;
   width: 100%;
 }
 
-.footer p{
-  color:hsl(0, 0%, 100%, 0.85);
+.footer p {
+  color: hsl(0, 0%, 100%, 0.85);
   padding: 0 20px;
 }
 
-
 @media (max-width: 1400px) and (min-width: 776px) {
-  #panels{
-    width:90%;
+  #panels {
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -179,14 +179,13 @@ iframe {
     max-width: 100%;
   }
 
-  .panel li{
-    margin:7px 0 0 2px;
+  .panel li {
+    margin: 7px 0 0 2px;
     padding: 5px 0;
   }
 }
 
-@media (max-width: 775px){
-
+@media (max-width: 775px) {
   body {
     margin: 0;
   }
@@ -195,11 +194,11 @@ iframe {
     grid-template-columns: 33.33% 33.33% 33.33%;
     margin: 15px 10px 0 10px;
   }
- 
+
   #pStrong {
-    max-width:75%;
+    max-width: 75%;
   }
-  
+
   iframe {
     height: 250px;
     max-width: 98%;
@@ -220,14 +219,14 @@ iframe {
     max-width: 95%;
     margin: auto;
   }
-  
-  .panel li{
-    margin:7px 0 0 2px;
+
+  .panel li {
+    margin: 7px 0 0 2px;
     padding: 2px 0;
     line-height: 25px;
   }
 
-  .footer{
+  .footer {
     grid-template-columns: 33.33% 33.33% 33.33%;
     margin: 0;
     padding-bottom: 0;
@@ -241,5 +240,4 @@ iframe {
     grid-template-columns: 33.33% 33.33% 33.33%;
     margin: 0;
   }
-
 }
