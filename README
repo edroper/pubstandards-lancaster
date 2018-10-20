@@ -31,9 +31,7 @@ What I did:
     [x] Need to tidy and 
 []organize CSS file.
     [x] Test in Firefox
-[] Test in Edge.
-    [] Issue: footer text appears black or dk grey instead of partially opaque white
-    [] Footer sizing + margin  are off at 775px.  May be general issue not Edge
+    [x] Test in Edge.
 
 -HTML Validation:
     [x] Trimmed trailing white space

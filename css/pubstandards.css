@@ -94,27 +94,27 @@ iframe {
   height: 350px;
 }
 
-#panels {
+#sidePanels {
   grid-column: 1/2;
   width: 100%;
 }
 
-.panel {
+.sidePanel {
   max-width: 329px;
   margin: auto;
 }
-.panel img {
+.sidePanel img {
   max-width: 329px;
   padding-top: 20px;
   margin: auto;
 }
-.panel h2 {
+.sidePanel h2 {
   color: #f2eeac;
   font-family: Georgia, Times New Roman, Times, serif;
   margin: 20px 0 0 0;
 }
 
-.panel p {
+.sidePanel p {
   font-family: Stone, Helvetica, Arial, sans-serif;
   line-height: 22px;
   color: #ffffff;
@@ -122,18 +122,18 @@ iframe {
   font-size: 11pt;
 }
 
-.panel ul {
+.sidePanel ul {
   list-style: none;
   padding: 0;
 }
-.panel li {
+.sidePanel li {
   font-family: Stone, Helvetica, Arial, sans-serif;
   color: #ffffff;
   margin: 7px 0 0 2px;
   padding: 2px 0;
 }
 
-.panel li.see-more-link {
+.sidePanel li.see-more-link {
   cursor: pointer;
 }
 
@@ -151,35 +151,36 @@ iframe {
   text-decoration: line-through;
 }
 
-.footer {
+.foot {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   font-family: Stone, Helvetica, Arial, sans-serif;
   padding: 0 0 10px 0;
 }
 
-.footer div {
+.foot div {
   grid-column: 2/4;
   background-color: #333333;
   width: 100%;
 }
 
-.footer p {
-  color: hsl(0, 0%, 100%, 0.85);
+.foot p {
+  color: white;
+  opacity: 0.85;
   padding: 0 20px;
 }
 
 @media (max-width: 1400px) and (min-width: 776px) {
-  #panels {
+  #sidePanels {
     width: 90%;
     margin: 0 auto;
   }
 
-  .panel img {
+  .sidePanel img {
     max-width: 100%;
   }
 
-  .panel li {
+  .sidePanel li {
     margin: 7px 0 0 2px;
     padding: 5px 0;
   }
@@ -206,30 +207,34 @@ iframe {
     border: 2px solid #333333;
   }
 
-  .panel {
+  .sidePanel {
     margin-right: 2px;
     margin-left: 6px;
     padding-left: 6px;
   }
-  .panel h2 {
+  .sidePanel h2 {
     hyphens: auto;
   }
 
-  .panel img {
+  .sidePanel img {
     max-width: 95%;
     margin: auto;
   }
 
-  .panel li {
+  .sidePanel li {
     margin: 7px 0 0 2px;
     padding: 2px 0;
     line-height: 25px;
   }
 
-  .footer {
+  .foot {
     grid-template-columns: 33.33% 33.33% 33.33%;
-    margin: 0;
+    margin: 0 10px 15px 0;
     padding-bottom: 0;
+  }
+
+  .foot p {
+    color: hsl(0, 0%, 100%, 0.85);
   }
 }
 
@@ -238,6 +243,10 @@ iframe {
   Or is there a CSS property to address words wrapping that I can apply?*/
   #main_wrapper {
     grid-template-columns: 33.33% 33.33% 33.33%;
+    margin: 0;
+  }
+
+  .foot {
     margin: 0;
   }
 }

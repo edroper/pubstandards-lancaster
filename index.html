@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
    <title>Pub Standards - Lancaster</title>
+
    <link rel="stylesheet" href="css/pubstandards.css" type="text/css">
 </head>
 <body>
 
     <div id="main_wrapper">
-        <div id="panels">
-            <div class="panel">
-              <!--For words>=10 letters I suggest indicated preferred breakpoints with
+        <aside id="sidePanels">
+            <div class="sidePanel" tabindex="10">
+              <!--For words>=10 letters I suggest indicating preferred breakpoints with
               &shy to prevent text from panel overlapping with #main-content.  -->
               <img alt="pubstandards coaster logo" src="images/Pub-Standards-Lancaster-min.png">
               <h2>When?</h2>
               <p>The second Thursday of every month, 6:00pm onwards.</p>
-              <ul class="collapsable-date-list">
+              <ul role="list" id="ulOne" class="collapsable-date-list">
                 <li><span class="date"># 67</span>11th October 2018</li>
                 <li class="past"><span class="date"># 66</span>13th September 2018</li>
                 <li class="past"><span class="date"># 65</span>9th August 2018</li>
@@ -87,14 +89,15 @@
                 <li class="past"><span class="date"># 1</span>11th April 2013</li>
                 <li class="past"><span class="date"># 0</span>14th March 2013</li>
               </ul>
-
+            </div>
+            <div class="sidePanel">
               <h2>When is Sub&shystan&shydards?</h2>
               <p>Periodically, the fourth Thursday of the month, 6:00pm onwards.</p>
               <p>
                 If anyone wants to organize a Sub&shystandards, contact
-                <a href="http://twitter.com/PubStandardsLnc">@Pub&shyStan&shydards&shyLnc</a>.
+                <a href="http://twitter.com/PubStandardsLnc" tabindex="13">@Pub&shyStan&shydards&shyLnc</a>.
               </p>
-              <ul class="collapsable-date-list">
+              <ul role="list" id="ulTwo" class="collapsable-date-list">
                 <li><span class="date"> "Meadery" </span>25th October 2018<br>Meduseld Meadery</li>
                 <li class="past"><span class="date"> "Home&shycoming" </span>25th August 2016<br>Spring House Taproom</li>
                 <li class="past"><span class="date"> "Lowered" </span>26th May 2016<br>Pubforge</li>
@@ -107,8 +110,8 @@
                 <li class="past"><span class="date"> "Kumiko" </span>27th February 2014<br>Lancaster Brewing Company</li>
               </ul>
             </div>
-          </div>
-        <main id="main_content">
+          </aside>
+        <main id="main_content" tabindex="1">
           <!--<h2>Temporary location this month:</h2>
           <p>
             Our normal venue is closed on Thursday, so Pub Standards will be
@@ -124,8 +127,8 @@
 
           <h1>What is it?</h1>
           <p>Pub Standards Lancaster is a monthly meetup of developers, designers, founders and people-who-like-to-build-stuff in central Pennsylvania.
-            It has been running in Lancaster since 2013, as well as in <a href="http://www.pubstandards.co.uk/" title="PubStandards London">London</a> and <a href="http://pubstandards.com/">other cities</a> since 2005.</p>
-          <p>Pub Standards is organized by <a href="http://twitter.com/courtewing" title="Court Ewing on Twitter">Court Ewing</a>.</p>
+            It has been running in Lancaster since 2013, as well as in <a href="http://www.pubstandards.co.uk/" title="PubStandards London" tabindex="2">London</a> and <a href="http://pubstandards.com/" tabindex="3">other cities</a> since 2005.</p>
+          <p>Pub Standards is organized by <a href="http://twitter.com/courtewing" title="Court Ewing on Twitter" tabindex="4">Court Ewing</a>.</p>
 
           <h2>Who is it for?</h2>
           <p>Pub Standards is open to everyone. It's loosely aimed at web design &amp; development geeks, but that doesn't mean chitchat need necessarily be work-related.&nbsp; Don't expect structure, don't expect presentations, just relax with likeminded people and a few beers.</p>
@@ -134,8 +137,8 @@
 
           <h2>Where?</h2>
           
-          <p><a href="http://www.tellus360.com/">Tellus360</a> on the first block of East King. We'll be on the second floor (the lounge).</p>
-          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=z27oEFr0gOXM.k7ToRqA38qM4&amp;z=15"></iframe>
+          <p><a href="http://www.tellus360.com/" tabindex="5">Tellus360</a> on the first block of East King. We'll be on the second floor (the lounge).</p>
+          <iframe role="application" src="https://www.google.com/maps/d/u/0/embed?mid=z27oEFr0gOXM.k7ToRqA38qM4&amp;z=15" tabindex="6"></iframe>
 
           <!--
           <p><a href="https://pubforge.work/">Pubforge</a> on the first block of East King. Second floor of Tellus360</p>
@@ -148,18 +151,23 @@
             the fourth Thursday of any month when someone feels like organizing it. The rules are that, instead of
             having a number (like regular Pub Standards) it must have a name (such as Substandards Jeff) and must always
             be in a different pub. Follow
-            <a href="http://twitter.com/PubStandardsLnc" title="Pub Standards Lancaster on Twitter">@PubStandardsLnc</a>
+            <a href="http://twitter.com/PubStandardsLnc" title="Pub Standards Lancaster on Twitter" tabindex="12">@PubStandardsLnc</a>
             for location details.
           </p>
         </main>
       </div>
 
 
-  <footer class="footer">
+  <footer class="foot">
     <div>
-      <p>Pub Standards beermat by <a href="http://twitter.com/kapowaz" title="Ben Darlow on Twitter">Ben</a>.
-        Original markup by <a href="http://twitter.com/EamonLeonard" title="Eamon Leonard on Twitter">Eamon</a>.
-        The amish touch by <a href="http://twitter.com/courtewing" title="Court Ewing on Twitter">Court</a>.</p>
+      <p>
+        Pub Standards beermat by 
+        <a href="http://twitter.com/kapowaz" title="Ben Darlow on Twitter" tabindex="15">Ben</a>.
+        Original markup by 
+        <a href="http://twitter.com/EamonLeonard" title="Eamon Leonard on Twitter" tabindex="16">Eamon</a>.
+        The amish touch by 
+        <a href="http://twitter.com/courtewing" title="Court Ewing on Twitter" tabindex="17">Court</a>.
+      </p>
     </div>
     </footer>
 
@@ -179,6 +187,12 @@
       }
       if (count > 5) {
         var li = document.createElement('li');
+        if(collapsable_lists[i].id === "ulOne"){
+          li.tabIndex = 11;
+        };
+        if(collapsable_lists[i].id === "ulTwo"){
+          li.tabIndex = 14;
+        };
         li.className = 'see-more-link';
         li.appendChild(document.createTextNode('See more...'));
         li.onclick = function () {
