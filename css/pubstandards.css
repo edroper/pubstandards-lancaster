@@ -19,8 +19,15 @@ h3 {
   font-size: 13pt;
 }
 
-a {
+a:link,
+a:visited {
   color: #f2eeac;
+  opacity: 0.9;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #0000EE;
   opacity: 0.9;
 }
 

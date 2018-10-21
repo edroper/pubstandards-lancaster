@@ -39,10 +39,12 @@ What I did:
     [x] Changed 1st header from h2 to h1 to give html semantic meaning  per W3C Validation
     [x] Switched main content container from div to main tags for accessibility
     [x] Removed inline stylings for <iframe> & moved to CSS per W3C Validation.
-[] Finish reviewing HTML for accessibility.
-[] Add Tab-indexes?  (With sidebar structure first this could be helpful.  )
-[] Review WCAG standards and apply in this case?
-[] Turn WCAG standards (as you read it) into a checklist to skim through with all pages.
+    [x] Finish reviewing HTML for accessibility.
+    [x] Add Tab-indexes?  (With sidebar structure first this could be helpful.  )
+    [x] Review WCAG standards and apply in this case?
+[] Run page through FreeCodeCamp accessibility
+[] Ran HTML through https://validator.w3.org/nu/.  
+
 
 ////Speed Test
 //////Before:
