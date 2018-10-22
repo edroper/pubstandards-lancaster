@@ -19,18 +19,6 @@ h3 {
   font-size: 13pt;
 }
 
-a:link,
-a:visited {
-  color: #f2eeac;
-  opacity: 0.9;
-}
-a:hover,
-a:focus,
-a:active {
-  color: #0000EE;
-  opacity: 0.9;
-}
-
 h1,
 h2 {
   color: #f2eeac;
@@ -43,6 +31,18 @@ h2 {
 p,
 li {
   opacity: 0.8;
+}
+
+a:link,
+a:visited {
+  color: #f2eeac;
+  opacity: 0.9;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #0000ee;
+  opacity: 0.9;
 }
 
 #main_wrapper {
@@ -246,8 +246,6 @@ iframe {
 }
 
 @media (max-width: 575px) {
-  /*Adjust font-size down so 'substandards' doesn't overlap
-  Or is there a CSS property to address words wrapping that I can apply?*/
   #main_wrapper {
     grid-template-columns: 33.33% 33.33% 33.33%;
     margin: 0;
