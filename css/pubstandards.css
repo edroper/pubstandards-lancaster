@@ -31,6 +31,7 @@ h2 {
 p,
 li {
   opacity: 0.8;
+  font-size: 11pt;
 }
 
 a:link,
@@ -53,6 +54,7 @@ a:active {
 #main_content {
   grid-column: 2/4;
   width: 100%;
+  height: fit-content;
   background-color: #333333;
   padding: 10px 0 10px 0;
 }
