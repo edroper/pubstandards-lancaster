@@ -139,6 +139,43 @@ iframe {
   -moz-border-radius: 4px;
 }
 
+.future {
+  animation: colorChange 3s 3, grow 1s 3; /* Adjusted the iteration count to 3 for both animations */
+  font-weight: bold;
+  font-size: 1.2em;
+  border: 2px solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@keyframes colorChange {
+  0% {
+    color: blue;
+    border-color: red;
+  }
+  50% {
+    color: green;
+    border-color: yellow;
+  }
+  100% {
+    color: blue;
+    border-color: red;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 .past {
   text-decoration: line-through;
 }
